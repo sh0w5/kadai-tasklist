@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Nodels\Tasks;
+use App\Models\Task;
 
 class TasksController extends Controller
 {
@@ -16,9 +16,9 @@ class TasksController extends Controller
     public function index()
     {
         //
-        $tasks = Tasks::all();
+        $tasks = Task::all();
         
-        return view('Tasks.index',[
+        return view('tasks.index',[
             'tasks' => $tasks,
             ]);
     }
@@ -33,7 +33,7 @@ class TasksController extends Controller
         $task = new Task;
         
         //
-        return view('Tasks.create',[
+        return view('tasks.create',[
             'task' => $task,
             ]);
         
@@ -66,7 +66,7 @@ class TasksController extends Controller
         //
         $task = Task::findOrFail($id);
         
-        return view('Task.show',[
+        return view('tasks.show',[
             'task' => $task,
             ]);
     }
@@ -82,7 +82,7 @@ class TasksController extends Controller
         //
         $task = Task::findOrFail($id);
         
-        return view('Task.edit',[
+        return view('tasks.edit',[
             'task' => $task,
             ]);
     }
@@ -119,5 +119,6 @@ class TasksController extends Controller
         $task->delete();
         
         return redirect('/');
+        
     }
 }
