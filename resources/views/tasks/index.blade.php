@@ -12,8 +12,8 @@
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>内容</th>
                     <th>status</th>
+                    <th>内容</th>
                 </tr>
             </thead>
             <tbody>
