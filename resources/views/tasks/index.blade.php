@@ -13,6 +13,7 @@
                 <tr>
                     <th>id</th>
                     <th>内容</th>
+                    <th>status</th>
                 </tr>
             </thead>
             <tbody>
