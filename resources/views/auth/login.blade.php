@@ -1,8 +1,14 @@
-<x-guest-layout>
+@extends('layout.app')
+
+@section('content')
+
+    <div class="prose mx-auto text-center">
+        <h2>Log in</h2>
+    </div>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-
-    <form method="POST" action="{{ route('login') }}">
+    <div class="flex justify-center">
+    <form method="POST" action="{{ route('login') }}" class="w-1/2">
         @csrf
 
         <!-- Email Address -->
