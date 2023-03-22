@@ -12,7 +12,10 @@
             @csrf
             @method('PUT')
 
-                 <div class="form-control my-4">
+                <div class="form-control my-4">
+                    <label for="status" class="label">
+                
+                <div class="form-control my-4">
                     <label for="status" class="label">
                         <span class="label-text">status:</span>
                     </label>

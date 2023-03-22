@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <!-- ここにページ毎のコンテンツを書く -->
 <div class="prose ml-4">
         <h2>タスク一覧</h2>
